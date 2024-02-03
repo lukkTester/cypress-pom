@@ -9,10 +9,15 @@ The Page Object Model pattern is followed for writing tests. This involves creat
 ## Structure
 
 `e2e` - tests with their logics
+
 `support/assertions` - assertions used for verification test step results
+
 `support/helpers` - general supportive methods
+
 `support/page_objects` - application pages implemented as classes
+
 `test_data` - constant data used for tests
+
 
 ## How to Run Tests
 
