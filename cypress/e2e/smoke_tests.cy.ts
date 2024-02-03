@@ -34,7 +34,7 @@ describe('Smoke tests suite', () => {
 
   it('Should log in to the application', () => {
     
-    logIn()
+    logIn();
 
     verifyWelcomeUserIsDisplayed(user.name, user.surname);     
     verifyHeaderMenuIsDisplayed();   
@@ -44,7 +44,7 @@ describe('Smoke tests suite', () => {
     const headerMenu = new HeaderMenuPage();
     const searchFilterPage = new SearchFilterPage();
 
-    logIn()
+    logIn();
 
     headerMenu.searchForProduct("electronics");
 
@@ -53,7 +53,7 @@ describe('Smoke tests suite', () => {
     searchFilterPage.filterMaxPrice("20")
                     .applyFilter();
     
-    verifyFilteredProductsAmount(3)
+    verifyFilteredProductsAmount(3);
   });
 
   const logIn = () => {
@@ -65,7 +65,5 @@ describe('Smoke tests suite', () => {
     loginPage.fillEmail(email)
              .fillPassword(user.password)
              .submitLogIn();
-
   }
-
 });
